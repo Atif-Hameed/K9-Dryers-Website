@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Asap+Condensed&family=Barlow+Semi+Condensed:wght@500&family=Barlow:wght@400;500;600;700&family=DM+Serif+Display&family=Dancing+Script&family=K2D:wght@700&family=Patrick+Hand&family=Signika+Negative:wght@600&family=Signika:wght@500&family=Tilt+Neon&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Asap+Condensed&family=Barlow+Semi+Condensed:wght@500&family=Barlow:wght@400;500;600;700&family=DM+Serif+Display&family=Dancing+Script&family=K2D:wght@700&family=PT+Sans&family=Patrick+Hand&family=Signika+Negative:wght@600&family=Signika:wght@500&family=Source+Code+Pro:wght@600&family=Tilt+Neon&family=Yanone+Kaffeesatz:wght@500&display=swap"
+        rel="stylesheet">
+    <title>k-9dryers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/font/Qlassik_TB.ttf">
+
+</head>
+
+<body>
+    <!-- TOP - HERO SECTION -->
+    <div class="bg-image">
+
+        <!-- TOP MAIN NAVBAR -->
+        <nav class="d-none d-md-block navbar navbar-expand navbar-light top-main-nav py-0">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto d-flex align-items-center">
+                        <!-- added justify-content-center class -->
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link fw-bolder d-flex align-items-center text-white px-0 " href="#"
+                                style="font-size: 16px; font-family: 'PT Sans', sans-serif;">Welcome,</a>
+                            <a class="fw-bold d-flex align-items-center text-decoration-underline text-white" href=""
+                                style="font-family:'PT Sans', sans-serif;word-spacing: 0;">Guest! (Login)</a> <span
+                                class=" vertical-line mx-2 align-middle"></span>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="align-items-center nav-link d-flex  fw-bolder text-white px-0"
+                                style="font-size: 15px; font-family: 'PT Sans', sans-serif;" href="#">My Orders<span
+                                    class="vertical-line mx-2 align-middle"></span></a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="align-items-center nav-link d-flex fw-bolder text-white px-0"
+                                style="font-size: 16px; font-family: 'PT Sans', sans-serif;" href="#">Order
+                                Tracking<span class="vertical-line mx-2 align-middle"></span></a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="align-items-center nav-link d-flex fw-bolder text-white px-0"
+                                style="font-size: 16px; font-family: 'PT Sans', sans-serif;" href="#">Get Support<span
+                                    class="vertical-line mx-2 align-middle"></span></a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="align-items-center nav-link d-flex fw-bolder text-white px-0"
+                                style="font-size: 16px; font-family: 'PT Sans', sans-serif;" href="#">Shelters<span
+                                    class="vertical-line mx-2 align-middle"></span></a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="align-items-center nav-link d-flex fw-bolder text-white px-0"
+                                style="font-size: 16px; font-family: 'PT Sans', sans-serif;" href="#">Dogger Blog<span
+                                    class="vertical-line mx-2 align-middle"></span></a>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="align-items-center nav-link d-flex align-items-center fw-bolder text-white px-2"
+                                style="font-size: 16px; font-family: 'PT Sans', sans-serif;" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PKR <img class="mx-2" src="icon.png" width="12px" height="12px" alt=""> <span
+                                    class="vertical-line mx-2 align-middle"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">LBP</a></li>
+                                <li><a class="dropdown-item" href="#">IND</a></li>
+                                <li><a class="dropdown-item" href="#">BTC</a></li>
+                                <li><a class="dropdown-item" href="#">DOL</a></li>
+                                <li><a class="dropdown-item" href="#">EUP</a></li>
+                                <li><a class="dropdown-item" href="#">PKR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid px-md-5 hero-container">
+            <div class="row">
+                <div class="col-12 px-0 py-sm-1 py-0 d-flex mt-md-1 align-items-center mb-3">
+                    <a class="col-xsm-3 navbar-brand mx-3" href="#">
+                        <img class="img-fluid logo"
+                            src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/logo-white.png" width="150rem"
+                            alt=""></a>
+
+                    <!-- HERO LOWER NAVABR -->
+                    <nav class="col-xsm-9 navbar ms-auto navbar-expand-md navbar-light ">
+                        <div class="collapse navbar-collapse  px-3" id="">
+                            <ul class="navbar-nav mb-2 mb-lg-0 mx-lg-1 ">
+                                <li class="nav-item px-lg-2 px-0">
+                                    <a class="nav-link fw-bolder text-white"
+                                        style="font-size: 18px; font-family: 'PT Sans', sans-serif;" href="#">Dog
+                                        Dryers</a>
+                                </li>
+                                <li class="nav-item px-lg-2 px-0">
+                                    <a class="nav-link fw-bolder text-white"
+                                        style="font-size: 18px; font-family: 'PT Sans', sans-serif;"
+                                        href="#">Accessories</a>
+                                </li>
+                                <li class="nav-item px-lg-2 px-0">
+                                    <a class="nav-link fw-bolder text-white"
+                                        style="font-size: 18px; font-family: 'PT Sans', sans-serif;" href="#">Parts</a>
+                                </li>
+                                <li class="nav-item px-lg-2 px-0">
+                                    <a class="nav-link fw-bolder text-white"
+                                        style="font-size: 18px; font-family: 'PT Sans', sans-serif;"
+                                        href="#">Repairs</a>
+                                </li>
+                                <li class="nav-item px-lg-2 px-0 dropdown">
+                                    <a class="nav-link fw-bolder  text-white"
+                                        style="font-size: 18px; font-family: 'PT Sans', sans-serif;" href="#"
+                                        id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Guides
+                                        <img class="mx-2" src="icon.png" width="12px" height="12px" alt="">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ms-lg-5">
+                            <div class="d-flex align-items-center px-sm-0 px-2">
+                                <input class="d-none d-md-block form-control rounded-1 me-2" type="search"
+                                    placeholder="Search" style="max-width: 9.3rem; height: 2.2rem;" aria-label="Search">
+
+
+                                <i
+                                    class="fa-solid fs-light  lh-sm fs-5 fa-magnifying-glass text-white mx-md-1 mx-2"></i>
+
+                                <i class="d-md-none bi bi-person  lh-sm text-white fs-2 mx-md-1 mx-3"></i>
+
+                                <span class="cart-border mx-sm-3 mx-2  align-items-center"><i
+                                        class="lh-sm m-0 p-0 text-white  fa-solid fa-bag-shopping"></i> </span>
+                                <button class="navbar-toggler border-0  px-0 mx-md-1 mx-3" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <i class="bi bi-list fs-1 lh-sm my-0 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse  px-0" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 position-relative bg-white w-100 mb-lg-0 mx-lg-4 ">
+                    <li class="nav-item px-lg-2 px-0">
+                        <a class="nav-link fw-bold fs-6 text-dark" href="#">Dog Dryers</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-0">
+                        <a class="nav-link fw-bold fs-6 text-dark" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-0">
+                        <a class="nav-link fw-bold fs-6 text-dark" href="#">Parts</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-0">
+                        <a class="nav-link fw-bold fs-6 text-dark" href="#">Repairs</a>
+                    </li>
+                    <li class="nav-item px-lg-2 px-0 dropdown">
+                        <a class="nav-link fw-bold fs-6 dropdown-toggle text-white" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guides
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <div class="">
+                    <h3 class="hero-heading-1 lh-sm my-0 " style="font-family: 'MyFont';color: rgb(79, 10, 10);">The
+                        World's Finest</h3>
+                    <h1 class="text-white hero-heading-2 lh-sm my-0">Dog Dryers <br>& Dog Blowers</h1>
+                    <h3 class="hero-heading-1 lh-sm" style="font-family: 'MyFont';color: rgb(79, 10, 10);">for your
+                        furry pals.</h3>
+                </div>
+                <div class="my-sm-2 my-0 hero-btns">
+                    <button type="button" style="font-family: 'PT Sans', sans-serif; padding: 0.5rem 2rem;"
+                        class=" my-0  btn btn-lg fw-bold fs-6 border-light hero-btn-1 ">K9
+                        Fluffer Dryer</button>
+                    <button type="button" style="font-family: 'PT Sans', sans-serif; padding: 0.5rem 2.2rem;"
+                        class=" my-sm-0 my-2 btn btn-lg fw-bold fs-6 border-light hero-btn-2 ms-sm-3">More
+                        Products</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- AS SEEN ON -->
+    <div class="container-fluid px-lg-5 py-4">
+        <div class="d-flex flex-wrap pb-4 py-2  ms-lg-5">
+            <div class="ASO col-lg-4  justify-md-content-end  col-md-5 flex-grow-0  d-md-flex align-items-center">
+                <h1 class="ASO-head " style="color: #535353;">As Seen On</h1>
+                <hr class="col-lg-2  col-md-4 col-12 ms-lg-5 ms-md-3  lh-sm  border-top border-3"
+                    style="border-color: #4e4e4e !important;">
+            </div>
+            <div class=" col-md-8 col-12 px-lg-3">
+                <div class=" d-flex flex-wrap  col-12 justify-content-md-between align-items-center">
+                    <img class="img-fluid" width="" src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/NBC.png"
+                        alt="">
+
+                    <img class="img-fluid ms-lg-4 ms-md-1 ms-sm-3 ms-2" width=""
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/cbs.png" alt="">
+
+                    <img class="img-fluid ms-lg-4 ms-md-1 ms-sm-3 ms-2" width=""
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/usatoday.png" alt="">
+
+                    <img class=" ms-lg-4 ms-md-1 ms-sm-3 ms-2 mx-md-3" width="50rem" height="50rem"
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/Fox_News_Channel_logo_1_edc6940a-4553-421d-b8bc-e48f1c607b81.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <hr class="border-top border-2" style="border-color: #4e4e4e !important;">
+
+    </div>
+
+    <!-- HEADING + BG-YELLOW -->
+    <div class="container-fluid bg-image-2 p-sm-5">
+        <div class="container px-lg-5 px-0 py-4">
+            <h2 class="fw-bold" style="color: #535353; font-family: 'Signika Negative', sans-serif;">K-9 Dryers</h2>
+            <div class="col-xxl-7 col-md-8 position-relative">
+                <div class="bg-yellow"></div>
+                <h1 class="heading-3">The Most Powerful &<br> Reliable Dog Dryer</h1>
+            </div>
+            <h2 class="fw-bold bg-yello-text" style="color: #535353; font-family: 'Signika Negative', sans-serif;">
+                Discover the
+                fastest fluff for your pup!</h2>
+        </div>
+    </div>
+
+
+    <!-- CAROUSEL-1 -->
+    <div class="container">
+        <div class="mb-5 mt-sm-0 mt-5 owl-carousel owl-theme">
+            <!-- CARD-1 -->
+            <div class="item ">
+                <div class="card border-0">
+                    <img class="card-img-top "
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/products/k9i-purple_396x264.jpg?v=1657798990"
+                        alt="">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h6 style="color: #959292;">100% control over the air</h6>
+                            <h4 class="fw-bold" style="color: #323131;font-family: 'Tilt Neon', cursive;">k-9 II
+                                Variable
+                                Dog Dryer<sup>TM</sup></h4>
+                            <h6 style="color: #959292;">Great for any large or small breeds</h6>
+                            <h6 style="color: #959292;">Options from <b style="color: #565555;">RS.164,500.00</b></h6>
+                            <p style="color: #3e3e3e;"><i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <span class="vertical-line-2"></span>
+                                34 Reviews
+                            </p>
+                            <button type="button" class="btn btn-outline-dark border-3 btn-lg"
+                                style="border-radius: 50px;">Product Details <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD-2 -->
+            <div class="item">
+                <div class="card border-0">
+                    <img class="card-img-top "
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/products/k9mini-burgundy_396x264.jpg?v=1657800046"
+                        alt="">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h6 style="color: #959292;">Super Portable</h6>
+                            <h4 class="fw-bold" style="color: #323131;font-family: 'Tilt Neon', cursive;">k-9 II Mini
+                                Dog
+                                Dryer<sup>TM</sup></h4>
+                            <h6 style="color: #959292;">Small model with Portable Power</h6>
+                            <h6 style="color: #959292;">Options from <b style="color: #565555;">RS.96,700.00</b></h6>
+                            <p style="color: #3e3e3e;"><i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <span class="vertical-line-2"></span>
+                                20 Reviews
+                            </p>
+                            <button type="button" class="btn btn-outline-dark border-3 btn-lg"
+                                style="border-radius: 50px;">Product Details <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD-3 -->
+            <div class="item">
+                <div class="card  border-0">
+                    <img class="card-img-top "
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/products/l9fluffer-black_396x264.jpg?v=1657798440"
+                        alt="">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h6 style="color: #959292;">Portable Professional Grade</h6>
+                            <h4 class="fw-bold" style="color: #323131;font-family: 'Tilt Neon', cursive;">k-9 Fluffer
+                                Dryer<sup>TM</sup></h4>
+                            <h6 style="color: #959292;">Perfect for grooming on the go</h6>
+                            <h6 style="color: #959292;">Options from <b style="color: #565555;">RS.102,100.00</b></h6>
+                            <p style="color: #3e3e3e;"><i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <span class="vertical-line-2"></span>
+                                15 Reviews
+                            </p>
+                            <button type="button" class="btn btn-outline-dark border-3 btn-lg"
+                                style="border-radius: 50px;">Product Details <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD-4 -->
+            <div class="item">
+                <div class="card  border-0">
+                    <img class="card-img-top "
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/products/k9i-purple_396x264.jpg?v=1657798990"
+                        alt="">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h6 style="color: #959292;">Professional Grade Power</h6>
+                            <h4 class="fw-bold" style="color: #323131;font-family: 'Tilt Neon', cursive;">k-9 I Dog
+                                Dryer<sup>TM</sup></h4>
+                            <h6 style="color: #959292;">The Favourite of dog groomers worldwide!</h6>
+                            <h6 style="color: #959292;">Options from <b style="color: #565555;">RS.134,700.00</b></h6>
+                            <p style="color: #3e3e3e;"><i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star"></i>
+                                <span class="vertical-line-2"></span>
+                                7 Reviews
+                            </p>
+                            <button type="button" class="btn btn-outline-dark border-3 btn-lg"
+                                style="border-radius: 50px;">Product Details <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD-5 -->
+            <div class="item">
+                <div class="card  border-0">
+                    <img class="card-img-top "
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/products/k9ii-limegreen_396x264.jpg?v=1658835752"
+                        alt="">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h6 style="color: #959292;">Super Powerfull pet warm air dryer</h6>
+                            <h4 class="fw-bold" style="color: #323131;font-family: 'Tilt Neon', cursive;">k-9 II
+                                Dryer<sup>TM</sup></h4>
+                            <h6 style="color: #959292;">Large or Small, it dries them all!</h6>
+                            <h6 style="color: #959292;">Options from <b style="color: #565555;">RS.141,500.00</b></h6>
+                            <p style="color: #3e3e3e;"><i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <span class="vertical-line-2"></span>
+                                39 Reviews
+                            </p>
+                            <button type="button" class="btn btn-outline-dark border-3 btn-lg"
+                                style="border-radius: 50px;">Product Details <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD-6 -->
+            <div class="item">
+                <div class="card  border-0">
+                    <img class="card-img-top "
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/products/k9iii-variable-purple_259c8478-bee6-41fb-a14d-3a00ba5a97c2_425x284.jpg?v=1659940183"
+                        alt="">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h6 style="color: #959292;">Adjustable Professional Grade Power</h6>
+                            <h4 class="fw-bold" style="color: #323131;font-family: 'Tilt Neon', cursive;">k-9 III
+                                Variable
+                                Dog Dryer<sup>TM</sup></h4>
+                            <h6 style="color: #959292;">The Favourite of dog groomers worldwide</h6>
+                            <h6 style="color: #959292;">Options from <b style="color: #565555;">RS.181,200.00</b></h6>
+                            <p style="color: #3e3e3e;"><i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <span class="vertical-line-2"></span>
+                                51 Reviews
+                            </p>
+                            <button type="button" class="btn btn-outline-dark border-3 btn-lg"
+                                style="border-radius: 50px;">Product Details <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD-7 -->
+            <div class="item">
+                <div class="card  border-0">
+                    <img class="card-img-top "
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/products/k9iii-pink_425x284.jpg?v=1657799598"
+                        alt="">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h6 style="color: #959292;">Professional Single or Dual Motor</h6>
+                            <h4 class="fw-bold" style="color: #323131;font-family: 'Tilt Neon', cursive;">k-9 III Dog
+                                Dryer<sup>TM</sup></h4>
+                            <h6 style="color: #959292;">Drying time in half with Professional power</h6>
+                            <h6 style="color: #959292;">Options from <b style="color: #565555;">RS.160,500.00</b></h6>
+                            <p style="color: #3e3e3e;"><i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <i class="text-warning bi bi-star-fill"></i>
+                                <span class="vertical-line-2"></span>
+                                40 Reviews
+                            </p>
+                            <button type="button" class="btn btn-outline-dark border-3 btn-lg"
+                                style="border-radius: 50px;">Product Details <i
+                                    class="bi bi-arrow-right-short"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 mb-5 d-flex justify-content-sm-center align-items-center">
+            <button type="button" class="btn px-5 py-3 text-white fw-bold border-3 btn-lg"
+                style="border-radius: 50px; background-color: rgb(202, 70, 114); font-size: 17px;">Browse All Dryers <i
+                    class="bi bi-arrow-right-short"></i></button>
+        </div>
+    </div>
+
+    <!-- COLOR & STYLE FOR EVERYONE -->
+    <div class="container col-styl-top">
+        <div class="position-relative mb-5 align-items-center">
+            <div class="heading-bg"></div>
+            <h1 class=" text-center main-heading-4" style="font-family: 'Abril Fatface', cursive;">Colors
+                &Styles for Everyone
+            </h1>
+        </div>
+        <div class="mx-sm-5 p-0 mb-5">
+            <p class="text-center fs-4 px-sm-5" style="color:#4e4e4e;   ">Whether you're a <b
+                    style="color: rgb(202, 70, 114);">seasoned pro</b>, a <b style="color: rgb(202, 70, 114);">hobby
+                    groomer</b>, or just looking to <b style="color: rgb(202, 70, 114);">keep your home free of dog
+                    hair</b>, there’s a
+                K-9 Dryers model for you!</p>
+        </div>
+        <div class="d-flex justify-content-center " style="padding-top: 30px;">
+            <button type="button" class="btn-1 mx-md-3 mx-1 btn px-md-5 py-3 text-white fw-bold border-3 btn-lg"
+                style="border-radius: 50px; background-color:#edb551; font-size: 17px; border: 1px solid #e4a444;">Pro
+                Buying Guide <i class="bi bi-arrow-right-short"></i></button>
+            <button type="button" class="btn-1 mx-md-3 mx-1 btn px-md-5 py-3 text-white fw-bold border-3 btn-lg"
+                style="border-radius: 50px; background-color: #edb551; font-size: 17px; border: 1px solid #e4a444;">Home
+                Buying Guide <i class="bi bi-arrow-right-short"></i></button>
+        </div>
+    </div>
+
+    <!-- MOBILE IMAGE -->
+    <div class="position-relative mt-3">
+        <div class="container ">
+            <div class="d-flex justify-content-center position-relative">
+                <img class="img-fluid" src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/colors.png" alt="">
+                <button type="button" class="btn-1 btn-2 btn px-sm-5 px-4 py-3 text-white fw-bold border-3 btn-lg"
+                    style="border-radius: 50px; background-color:#edb551; font-size: 17px; border: 1px solid #e4a444;">Order
+                    a swatch set <i class="bi bi-arrow-right-short"></i></button>
+            </div>
+        </div>
+        <div class="purple-container mobil-img" style="border-top-left-radius: 60px;">
+            <div class="container py-5">
+                <div class="row align-items-center p-lg-5">
+                    <div class="col-md-6 px-sm-2 px-5">
+                        <p class="text-white mobil-head text-center">Why
+                            K-9
+                            Dog Dryers?</p>
+                        <p class="text-white mobil-text mb-sm-3 mb-5">After researching and reviewing a number of
+                            different models,
+                            products
+                            and manufacturers, we found
+                            that the K-9 Dog Dryer range of models are in a league of their own when it comes to dog
+                            grooming.
+                            <br><br>
+                            99% of dog groomers we consulted on their experience with dog dryers had nothing but amazing
+                            reviews
+                            of these high performance force dryers. After trying them ourselves, across a variety of
+                            breeds
+                            of
+                            dog, we were sold.
+                        </p>
+                    </div>
+                    <div class="col-md-6 px-sm-4 px-5">
+                        <a href="https://youtu.be/l0-E08KM1PY" target="_blank"><img class="img-fluid"
+                                src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/Group_586.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- K-9 DRYER DIFFERENCE -->
+    <div class="mx-md-5 ">
+        <div class="position-relative mb-5 align-items-center">
+            <div class="heading-bg-2"></div>
+            <h1 class="text-center main-heading-4" style="font-family: 'Abril Fatface', cursive;">The K-9
+                Dryers Difference
+            </h1>
+        </div>
+        <div class="px-md-5 p-0 mb-5">
+            <p class="text-center fs-4 text-heading-4" style="color:#4e4e4e;   "> The <b
+                    style="color: rgb(202, 70, 114);">largest selling dog dryer brand</b> in the USA.<br>
+                Committed to <b style="color: rgb(202, 70, 114);">innovation in design</b> through close collaboration
+                with <b style="color: rgb(202, 70, 114);">professional pet groomers.</b>
+                Consistent work to <b style="color: rgb(202, 70, 114);">earn our reputation as the leading option</b>
+                for grooming and dog dryers.</p>
+        </div>
+    </div>
+    <div class="d-flex mb-4 justify-content-center">
+        <hr class="col-11" style="height: 0.3px;">
+    </div>
+
+    <!-- DOG'S CARDS -->
+    <div class="container-fluid " style="width: 93%;">
+        <div class="d-md-flex">
+            <div class="col-md-4  px-2">
+                <div class="card border-0  mx-sm-2">
+                    <img class="card-img-top img-fluid px-sm-3 py-2"
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/Group_40.png" alt="">
+                    <div class="card-body">
+                        <div class="card-title mb-3">
+                            <h4 class="text-center fw-bold">Longer
+                                Extended Warranty</h4>
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center" style="color: #4e4e4e;">K-9 Dog Dryers carry the <b>ONLY
+                                    dealer-backed</b> 3- and 4-year extended warranties.
+                                <br><br>
+                                Our in-house service center handles repairs. We pass the savings on to you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  px-2">
+                <div class="card border-0  mx-sm-2">
+                    <img class="card-img-top img-fluid px-sm-3 py-2"
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/Group_41.png" alt="">
+                    <div class="card-body px-0">
+                        <div class="card-title mb-3">
+                            <h4 class="text-center fw-bold">No-Markup
+                                Shipping Center</h4>
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center" style="color: #4e4e4e;">In a jam and need it now? That’s OK. We don't
+                                markup shipping & handling.
+                                <br><br>
+                                You’ll get <b>next-day rates</b> on par with the cost of our competitors’ standard 3-5
+                                day ground shipping.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  px-2">
+                <div class="card border-0  mx-sm-2">
+                    <img class="card-img-top img-fluid px-sm-3 py-2"
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/Group_42.png" alt="">
+                    <div class="card-body">
+                        <div class="card-title mb-3">
+                            <h4 class="text-center fw-bold">Data
+                                Backed Studies</h4>
+                        </div>
+                        <div class="card-text">
+                            <p class="text-center" style="color: #4e4e4e;">We're funding studies on everything from
+                                filter selection to the best way to use any model from the trendy K9 product line.
+                                <br><br>
+                                Make sure to subscribe to keep up-to-date with <b>the latest innovations</b> from K-9
+                                Dryers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MID BIG IMAGE -->
+    <div class="d-flex mid-bg align-items-center mb-5 py-5 px-0">
+        <div class="d-md-flex my-5 align-items-center">
+            <div class="col-md-5 col-12 justify-content-center d-flex">
+                <a href="https://youtu.be/l0-E08KM1PY"><img class="img-fluid py-3"
+                        src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/testimonial-img.png" alt=""></a>
+            </div>
+            <div class="col-md-7 col-12">
+
+                <div id="carouselExampleControls" class="carousel slide px-5 mx-2" data-bs-ride="carousel"
+                    data-bs-interval="false">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active px-2">
+                            <div class="d-flex justify-content-center mb-5">
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                            </div>
+                            <div>
+                                <h2 class="mt-3 mb-5 text-warning fw-bold text-center px-4">This is by far the best
+                                    dryer I have owned. The air movement on this unit is awesome
+                                    for blowing out that undercoat.</h2>
+                            </div>
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <span class="bg-warning mx-2 p-0 " style="height: 2px; width: 15px;"></span>
+                                <p class="text-warning fs-4 m-0" style="font-style: italic;">Tony D., lowa</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-0">
+                            <div class="d-flex justify-content-center mb-5">
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                            </div>
+                            <div>
+                                <h2 class="mt-3 mb-5 text-warning fw-bold text-center px-4">I really love your dryers.
+                                    You guys have it covered! I own a grooming shop and we only use K-9dryers!</h2>
+                            </div>
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <span class="bg-warning mx-2 p-0 " style="height: 2px; width: 15px;"></span>
+                                <p class="text-warning fs-4 m-0" style="font-style: italic;">Engre B., Washington</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-0">
+                            <div class="d-flex justify-content-center mb-5">
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                            </div>
+                            <div>
+                                <h2 class="mt-3 mb-5 text-warning fw-bold text-center px-4">Very happy with my new
+                                    dryer. It is quiet...and the temperature on the dryer is perfect not too hot not too
+                                    cold.</h2>
+                            </div>
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <span class="bg-warning mx-2 p-0 " style="height: 2px; width: 15px;"></span>
+                                <p class="text-warning fs-4 m-0" style="font-style: italic;">Ted S., Virgina</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-0">
+                            <div class="d-flex justify-content-center mb-5">
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                            </div>
+                            <div>
+                                <h2 class="mt-3 mb-5 text-warning fw-bold text-center px-4">Cuts this fur mommas drying
+                                    time in half, woohoo!!!</h2>
+                            </div>
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <span class="bg-warning mx-2 p-0 " style="height: 2px; width: 15px;"></span>
+                                <p class="text-warning fs-4 m-0" style="font-style: italic;">JS, California</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-0">
+                            <div class="d-flex justify-content-center mb-5">
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                            </div>
+                            <div>
+                                <h2 class="mt-3 mb-5 text-warning fw-bold text-center px-4">This dryer is amazing! The
+                                    best / strongest out there in my opinion.</h2>
+                            </div>
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <span class="bg-warning mx-2 p-0 " style="height: 2px; width: 15px;"></span>
+                                <p class="text-warning fs-4 m-0" style="font-style: italic;">Jean V., Illinois</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item px-0">
+                            <div class="d-flex justify-content-center mb-5">
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                                <i class="bi fs-1 text-warning bi-star-fill mx-1"></i>
+                            </div>
+                            <div>
+                                <h2 class="mt-3 mb-5 text-warning fw-bold text-center px-4">I’m a new owner and this
+                                    blower works great. I use it to prep for brushing and it removes all loose hair
+                                    making the overall task much easier.</h2>
+                            </div>
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <span class="bg-warning mx-2 p-0 " style="height: 2px; width: 15px;"></span>
+                                <p class="text-warning fs-4 m-0" style="font-style: italic;">Curtis, Massachusetts</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <img class="img-fluid " style="width: 30px;" src="left-arrow.png" alt="">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next  " type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <img class="img-fluid" style="width: 30px;" src="right-arrow.png" alt="">
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="d-md-none "></div> -->
+        </div>
+    </div>
+
+    <!-- 3 CARDS Q G D -->
+    <div class="container-fluid px-4 card-marg" style="margin:9rem 0;">
+        <div class="d-flex row  " style="opacity: 0.9;">
+            <div class="col-md-4 my-md-0 my-4">
+                <h1 class="display-4 text-center" style="font-family: 'Abril Fatface', cursive;">Questions?</h1>
+                <p class="text-center fs-5">Get help and support from our team now</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="py-3 text-center btn btn-lg"
+                        style="border-radius: 50px; padding: 0 4.5rem; background-color: #edb551; font-size: 17px; border: 1.5px solid #e4a444;"><b
+                            class="btn-1 text-white align-items-center ">Support<i
+                                class="bi bi-arrow-right-short"></i></b></button>
+                </div>
+            </div>
+            <div class="col-md-4 my-md-0 my-4">
+                <h1 class="display-4 text-center" style="font-family: 'Abril Fatface', cursive;">Get Social!</h1>
+                <p class="text-center fs-5">See all latest in the K-9 Community</p>
+                <div class="d-flex justify-content-center">
+                    <button class="btn mx-2"
+                        style="border: 1.5px solid #e4a444; background-color: #edb551; border-radius: 50%;">
+                        <i class="bi fs-5 text-white bi-facebook"></i>
+                    </button>
+                    <button class="btn mx-3"
+                        style="border: 1.5px solid #e4a444; background-color: #edb551; border-radius: 50%;">
+                        <i class="bi fs-5 text-white bi-instagram"></i>
+                    </button>
+                    <button class="btn mx-2"
+                        style="border: 1.5px solid #e4a444; background-color: #edb551; border-radius: 50%;">
+                        <i class="bi fs-5 text-white bi-youtube"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 my-md-0 my-4">
+                <h1 class="display-4 text-center ms-2" style="font-family: 'Abril Fatface', cursive;">Dogger Blog?</h1>
+                <p class="text-center fs-5">Read the latest tips from our pro writers</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="py-3 text-center btn  btn-lg"
+                        style="border-radius: 50px; padding: 0 5rem; background-color: #edb551; font-size: 17px; border: 1.5px solid #e4a444;"><b
+                            class="btn-1 text-white align-items-center ">Blog<i
+                                class="bi bi-arrow-right-short"></i></b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-fluid px-0 mt-5">
+
+        <footer class="text-ld-center text-start text-white pb-3" style="background-color: #384149;">
+            <div class="container-fluid px-0 pb-0 py-4" style="width: 99.5%;">
+                <div class="row px-0 mx-0">
+                    <div class="col-md-4 mx-md-4 mt-3">
+                        <a class="navbar-brand mx-0" href="#">
+                            <img class="" src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/logo-white.png"
+                                width="150rem" alt=""></a>
+
+                        <p class="mt-4 col-10" style="font-size: 12px;color: #9a9fa3;">
+                            We are an authorized seller of Electric Cleaner Company dryers. We sell, service &
+                            repair the entire K9 dryer product catalogue from the smallest single motor dog dryer to
+                            the most powerful twin motor K-9 III variable speed dog dryer.<br><br>
+                            Shop with us for the largest selling dog dryer brand in the USA, which we believe are
+                            the best option for all grooming and pet dryer needs.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 mx-auto mt-3">
+                        <h6 class=" mb-4 fw-bold">Quick Links</h6>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Coupon Code</a>
+                        </p>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Affiliates</a>
+                        </p>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Supporting Shelters</a>
+                        </p>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Warranty</a>
+                        </p>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Order Tracking</a>
+                        </p>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Shipping</a>
+                        </p>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Refunds</a>
+                        </p>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Terms of Service</a>
+                        </p>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Your Privacy Matters</a>
+                        </p>
+                        <p class="m-0">
+                            <a style="color: #9a9fa3;" class="footer-a text-decoration-none">Contact Us</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-5 mt-3 align-items-center">
+                        <div class="ms-md-3">
+                            <h5 class="fw-bold text-white mx-xxl-4">Subscribe for ongoing Discounts, Giveaways, and
+                                Special
+                                Announcements</h5>
+                            <form class="d-sm-flex my-4">
+                                <input class="form-control search-wdith me-lg-3 px-3" type="search"
+                                    placeholder="Email Adress" aria-label="Search">
+                                <button class="btn my-sm-0 my-3 sub-width btn-warning fw-bold text-white "
+                                    type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                        <div class="d-flex px-0 justify-md-content-end justify-content-start mx-sm-4">
+                            <button class="btn social-hov mx-sm-2 mx-1 bg-light" style=" border-radius: 50%;">
+                                <i class="bi social-ico fs-5 text-dark bi-facebook"></i>
+                            </button>
+                            <button class="btn social-hov mx-3 bg-light" style=" border-radius: 50%;">
+                                <i class="bi social-ico fs-5 text-dark bi-instagram"></i>
+                            </button>
+                            <button class="btn social-hov mx-sm-2 mx-1 bg-light" style=" border-radius: 50%;">
+                                <i class="bi social-ico fs-5 text-dark bi-youtube"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-3">
+
+                <div class="row d-flex align-items-center py-0 px-0 mx-0">
+                    <div class="col-md-6  ">
+
+                        <div class="d-flex py-3 px-3 align-items-center">
+                            <img src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/bbb.png" alt="">
+                            <p class="mx-3 my-0" style="font-size: 0.8rem;color:#9a9fa3">© 2023, K-9 Dryers - 1906
+                                Goldfinch Ln Sauk City WI, 53583 </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-center text-md-end">
+
+                        <a class="mx-xsm-2" href=""><img
+                                src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/visa.png" alt=""></a>
+                        <a class="mx-xsm-2" href=""><img
+                                src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/master.png" alt=""></a>
+                        <a class="mx-xsm-2" href=""><img
+                                src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/pay.png" alt=""></a>
+                        <a class="mx-xsm-2" href=""><img
+                                src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/discover.png" alt=""></a>
+                        <a class="mx-xsm-2" href=""><img
+                                src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/gpay.png" alt=""></a>
+                        <a class="mx-xsm-2" href=""><img
+                                src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/paypal.png" alt=""></a>
+                        <a class="mx-xsm-2" href=""><img
+                                src="https://cdn.shopify.com/s/files/1/0279/1112/7139/files/ssl.png" alt=""></a>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- JAVA SCRIPT -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: ["<i class='bi text-warning arrow-size display-1 bi-arrow-left-circle-fill'></i>", "<i class='bi text-warning arrow-size bi-arrow-right-circle-fill'></i>"],
+                items: 1,
+                dots: false,
+                // autoplay: true,
+                autoplayTimeout: 5000,
+                smartSpeed: 1000,
+                responsive: {
+                    300: {
+                        nav: true,
+                        items: 1
+                    },
+                    768: {
+                        nav: true,
+                        items: 1
+                    },
+                    850: {
+                        nav: true,
+                        items: 2
+                    },
+                    1000: {
+                        nav: true,
+                        items: 3
+                    }
+                }
+            });
+        });
+
+    </script>
+    <script>
+        function toggleSelect() {
+            var select = document.getElementById("options");
+            if (select.style.display === "none") {
+                select.style.display = "block";
+            } else {
+                select.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
