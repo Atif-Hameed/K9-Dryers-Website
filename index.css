@@ -26,8 +26,6 @@ nav li select {
     display: none;
     display: block;
 }
-
-
 .hero-heading-1{
     font-size: 2.53rem;
 }
@@ -55,7 +53,6 @@ nav li select {
     top: 4px;
     left: 10px;
     z-index: 1;
-    /* opacity: 1!important; */
     transform: rotate(-3deg);
 
 }
@@ -74,29 +71,20 @@ nav li select {
   top: 35%;
   right: 0;
 }
-/* .owl-prev:hover,
-.owl-next:hover {
-  background-color: transparent;
-  color: inherit;
-} */
-.heading-bg{
-    background-color:rgb(164, 230, 230);
-    width: 60%;
-    position: absolute;
-    height: 90%;
-    top: 4px;
-    left: 230px;
-    z-index: 0;
-    opacity: 0.4!important;
+.btn-1{
+    border-radius: 50px !important;
+    background-color:#edb551 !important;
+    font-size: 16px !important; 
+    padding: 1rem 2.1rem !important;
+    border: 1px solid #e4a444 !important;
 }
 .btn-1:hover{
     color: black !important;
 }
 .purple-container{
-    background-color: #654da5;
+    background-image: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/Group_75.png');
     position: absolute;
-    width: 100%;
-    
+    background-repeat: no-repeat;
 }
 .mobil-img{
     position: relative;
@@ -104,8 +92,11 @@ nav li select {
     transition: all 0.5s ease;
 }
 .btn-2{
+    padding: 1.9rem 3.1rem;
+    border-radius: 50px;
     position: absolute;
-    top: 35%;
+    top: 37%;
+    left: 41%;
     transition: all 2s ease;
 }
 .bag{
@@ -142,17 +133,7 @@ nav li select {
     background-color: #edb551 !important;
 }
 .search-wdith{
-    width: 59%;
-}
-.heading-bg-2{
-    background: #EDB551;
-    width: 60%;
-    position: absolute;
-    height: 3.7rem;
-    top: 4px;
-    left: 20%;
-    z-index: 1;
-    opacity: 1!important;
+    width: 59% !important;
 }
 .mid-bg{
     background-image: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/tesimonial-pink-bg.png?v=1654687338');
@@ -161,9 +142,6 @@ nav li select {
     background-position:center;
     background-size: cover;
 }
-.footer-a{
-    font-size: 0.9rem;
-}
 .social-hov:hover{
     background-color:#EDB551 !important;
 }
@@ -171,20 +149,26 @@ nav li select {
     color: white !important;
 }
 .mobil-head{
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-family: 'Abril Fatface', cursive;
 }
 .mobil-text{
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 .main-heading-4{
-    font-size: 4rem !important;
-    position: relative;
-    z-index: 2;
-    opacity: 0.8!important;
+    background-image: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/Path_198.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9!important;
 }
 .col-styl-top{
     margin: 14rem 0 0 0;
+}
+.col-styl-text{
+    line-height: 2.8rem; 
+    font-size: 1.5rem; 
+    color:#606060; 
+    font-family: 'PT Sans', sans-serif;
 }
 .cart-border{
     font-size: 30px; 
@@ -192,16 +176,18 @@ nav li select {
     border-radius: 50%;
     padding: 0.1rem 0.75rem;
 }
-
-@media screen and (max-width:1200px){
-    .heading-3{
-        font-size: 3rem !important;
-    }
-    .hero-container{
-        width: 100% !important;
-    }
+.cart-border-2{
+    font-size: 30px; 
+    border: 2px solid #606060; 
+    border-radius: 50%;
+    padding: 0.1rem 0.75rem;
 }
-
+.vido-img{
+    width: 110%;
+}
+.btn-3:hover{
+    color: black !important;
+}
 /* LARGE SIZE */
 @media screen and (max-width:1000px){
     .heading-3{
@@ -213,7 +199,9 @@ nav li select {
     .hero-heading-2{
         font-size: 2rem;
     }
-    
+    .col-styl-top{
+        margin: 4rem 0 0 0;
+    }
     .mobil-img{
         top: -260px;
     } 
@@ -225,16 +213,10 @@ nav li select {
         top: -180px;
     } 
 }  
-
 /* MEDIUM SIZE */
 @media screen and (max-width: 770px) {
     .heading {
       font-size: 1.5rem !important;
-    }
-    .heading-bg{
-        width: 100% !important;
-        left: 0 !important;
-        height: 70% !important;
     }
     .mobil-img{
         top: -130px;
@@ -247,7 +229,6 @@ nav li select {
     .top-nav{
         display: none !important;
     }
-    
     .hero-container{
         padding-top: 10px;
     }
@@ -263,16 +244,15 @@ nav li select {
     .mobil-img{
         top: -75px;
     } 
-    .card-marg{
-        margin: 2rem 0 !important;
-    }
     .img-text{
         font-size: 0.9rem !important;
     } 
 }
-
 /* Small Size */
 @media screen and (max-width:576px){
+    .main-heading-4{
+       font-size: 3.4rem !important;
+    }
     .cart-border{
         font-size: 1.4rem; 
         border: none; 
@@ -295,7 +275,6 @@ nav li select {
     
     .bg-yellow{
         width: 96% !important;
-        /* height: 100% !important; */
     }
     .heading-3{
         font-size: 2.25rem !important;
@@ -304,24 +283,28 @@ nav li select {
         padding: 0 !important;
     }
     .btn-1{
-        font-size: 13px !important;
+        font-size: 13px !important; 
+        padding: 1rem 0.9rem !important;
+    }
+    .btn-2{
+        padding: 1.1rem 2.3rem !important;
+        top: 19%;
+        left: 20%;
     }
     .owl-prev {
         top: -12% !important;
-        left: 70% !important;
+        left: 70.7% !important;
       }
       .owl-next {
         top: -12%  !important;
-        right: 2% !important;
+        right: 0% !important;
       }
-      .heading-bg{
-        width: 100% !important;
-        left: 0 !important;
-        top: 20% !important;
-        height: 60% !important;
-    }
-    .main-heading-4{
+    .main-heading-text{
         font-size: 3.5rem !important;
+    }
+    .col-styl-text{
+        line-height: 2rem; 
+        font-size: 1.13rem; 
     }
     .search-wdith{
         width: 100% !important;
@@ -330,22 +313,24 @@ nav li select {
         font-size: 1.5rem !important;
     }
     .mobil-text{
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+    .vido-img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .mid-bg{
+        height: 115vh;       
     }
     .sub-width{
         border-radius: 50px !important;
         padding: 1% 14% 2% !important;
         background-color: #edb551 !important;
-    }
+    }   
 }
-
-
-
 @font-face {
     font-family: 'MyFont';
     src: url('font/QlassikBold_TB.otf') format('otf'),
          url('font/ffonts.net.htm') format('htm'),
          url('font/QlassikBold_TB.ttf') format('truetype');
 }
-  
-
