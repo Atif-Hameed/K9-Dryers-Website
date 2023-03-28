@@ -1,3 +1,6 @@
+body{
+    font-family:'PT Sans', sans-serif;
+}
 .bg-image {
     background-image: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/banner_a10eccef-1235-4536-bb29-3ff10dc32a7c.jpg?v=1655271111');
     height: 98%;
@@ -188,6 +191,29 @@ nav li select {
 .btn-3:hover{
     color: black !important;
 }
+.form-fields{
+    width: 40rem !important;
+    border:2px solid #D6D6D6 !important;
+    color: #D6D6D6 !important; 
+    height: 50px !important;
+    border-radius: 19px !important;
+    border-color: #D6D6D6 !important;
+    font-family: 'PT Sans', sans-serif !important;
+}
+.sign-text{
+    font-size: 3.8rem;
+}
+.btn-marg{
+    margin-bottom: 9rem;
+}
+.input-width{
+    width: 87% !important;
+    border-radius: 10rem !important;
+    height: 2.5rem !important;
+}
+.get-spot{
+    padding-right: 7.9rem !important;
+}
 /* LARGE SIZE */
 @media screen and (max-width:1000px){
     .heading-3{
@@ -246,6 +272,12 @@ nav li select {
     } 
     .img-text{
         font-size: 0.9rem !important;
+    }
+    .form-fields{
+        width: 22.4rem !important;
+    }
+    .sign-text{
+        font-size: 4rem;
     } 
 }
 /* Small Size */
@@ -327,7 +359,33 @@ nav li select {
         padding: 1% 14% 2% !important;
         background-color: #edb551 !important;
     }   
+    .cart-border-2{
+        border: none;
+        font-size: 25px;
+        padding: 0;
+    }
+    .form-fields{
+        width: 21.4rem !important;
+    }
+    .sign-text{
+        font-size: 2.89rem;
+    }
+    .btn-marg{
+        margin-bottom: 2rem;
+    }
+    .input-width{
+        width: 100% !important;
+        /* border-radius: 10rem !important;
+        height: 2.5rem !important; */
+    }
 }
+#inputForm::placeholder {
+    color:#c1bdbd
+  }
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
 @font-face {
     font-family: 'MyFont';
     src: url('font/QlassikBold_TB.otf') format('otf'),
