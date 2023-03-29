@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('font/QlassikBold_TB.otf') format('otf'),
+         url('font/ffonts.net.htm') format('htm'),
+         url('font/QlassikBold_TB.ttf') format('truetype');
+}
 body{
     font-family:'PT Sans', sans-serif;
 }
@@ -13,7 +19,9 @@ body{
 .top-main-nav {
     background-color: #00000018;
 }
-
+.hero-lower-font{
+    font-size: 18px !important;
+}
 .border-end {
     height: 1.9rem;
 }
@@ -214,6 +222,36 @@ nav li select {
 .get-spot{
     padding-right: 7.9rem !important;
 }
+.shelter-bg{
+    background: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/charity-banner.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.shelter-bg-2{
+    background: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/banner-bg_0cc96ecd-f5f9-4f1b-bc76-60b64b010139.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.shelter-bg-yelo{
+    background: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/Rectangle_781.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slect-width{
+    width: 21rem !important;
+}
+/* .shelter-input{
+    width: 21rem !important;
+}
+.shelter-input-2{
+    width: 28rem !important;
+} */
 /* LARGE SIZE */
 @media screen and (max-width:1000px){
     .heading-3{
@@ -241,6 +279,9 @@ nav li select {
 }  
 /* MEDIUM SIZE */
 @media screen and (max-width: 770px) {
+    .hero-lower-font{
+        font-size: 0.7rem !important;
+    }
     .heading {
       font-size: 1.5rem !important;
     }
@@ -279,6 +320,15 @@ nav li select {
     .sign-text{
         font-size: 4rem;
     } 
+    .slect-width{
+        width: 15rem !important;
+    }
+    /* .shelter-input{
+        width: 15rem !important;
+    }
+    .shelter-input-2{
+        width: 22rem !important;
+    } */
 }
 /* Small Size */
 @media screen and (max-width:576px){
@@ -373,11 +423,25 @@ nav li select {
     .btn-marg{
         margin-bottom: 2rem;
     }
+    .shelter-bg-head{
+        font-size: 2.7rem !important;
+        line-height: 2.5rem !important;
+    }
     .input-width{
         width: 100% !important;
-        /* border-radius: 10rem !important;
-        height: 2.5rem !important; */
     }
+    .slect-width{
+        width: 100% !important;
+    }
+    .custom-flex-wrap{
+        flex-wrap: wrap !important;
+    }
+    /* .shelter-input{
+        width: 100% !important;
+    }
+    .shelter-input-2{
+        width: 100% !important;
+    } */
 }
 #inputForm::placeholder {
     color:#c1bdbd
@@ -386,9 +450,3 @@ nav li select {
     outline: none !important;
     box-shadow: none !important;
   }
-@font-face {
-    font-family: 'MyFont';
-    src: url('font/QlassikBold_TB.otf') format('otf'),
-         url('font/ffonts.net.htm') format('htm'),
-         url('font/QlassikBold_TB.ttf') format('truetype');
-}
