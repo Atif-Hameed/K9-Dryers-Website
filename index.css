@@ -108,7 +108,17 @@ nav li select {
 .btn-1:hover {
     color: black !important;
 }
-
+.dog-btn-1{
+    border-radius: 50px !important;
+    background-color: #edb551 !important;
+    font-size: 16px !important;
+    padding: 1rem 2.1rem !important;
+    border: 1px solid #e4a444 !important;   
+    margin-left: -2rem;
+}
+.dog-btn-1:hover {
+    color: black !important;
+}
 .purple-container {
     background-image: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/Group_75.png');
     position: absolute;
@@ -366,11 +376,44 @@ nav li select {
     font-size: 3.75rem !important;
   }
   .hr-width{
-    width: 63%;
+    width: 95% !important;
   }
-  
+  .card-img-hover{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .card-img-hover:hover {
+    transform: scale(1.04);
+  }
+  .dog-dryer-headings{
+    font-size: 3.8rem;
+  }
+  .btn-marg{
+    margin: 4.7rem 0 0 -2rem; 
+  }
+  .access-btn{
+    margin-top: 0 !important;
+    transition: transform 0.4s ease !important;
+  }
+  .access-btn:hover{
+    margin-top: -0.2rem !important;
+    color: #fff !important;
+    background-color: #d24a8a !important;
+    border-color:#d24a8a !important ;
+    transform: scale(1.04) !important;
+  }
+  .card-main-heading:hover{
+    cursor: pointer !important;
+    color: #000 !important;
+  }
 /* LARGE SIZE */
 @media screen and (max-width:1000px) {
+    .hr-width{
+        width: 100% !important;
+      }
     .heading-3 {
         font-size: 2.5rem !important;
     }
@@ -399,13 +442,17 @@ nav li select {
     .mobil-img {
         top: -180px;
     }
-    .hr-width{
+    /* .hr-width{
         width: 60% !important;
-      }
+      } */
 }
 
 /* MEDIUM SIZE */
 @media screen and (max-width: 770px) {
+    /* .dog-btn-1{  
+        padding: 0.8rem 1.1rem !important;
+      } */
+      
     .hero-lower-font {
         font-size: 0.7rem !important;
     }
@@ -494,10 +541,20 @@ nav li select {
         top: 4px;
         left: 1px;
     }
-    
+    .btn-1 {
+        font-size: 13px !important;
+        padding: 1rem 0.8rem !important;
+    }
+     
 }
     /* Small Size */
     @media screen and (max-width:576px) {
+        .btn-marg{
+            margin: 4.7rem 0 0 0; 
+          }
+        .dog-dryer-headings{
+            font-size: 2.6rem;
+          }
         .main-heading-4 {
             font-size: 3.4rem !important;
         }
@@ -654,6 +711,9 @@ nav li select {
           }
           .hr-width{
             width: 100%;
+          }
+          .dog-btn-1{  
+            padding: 0.9rem 1.4rem !important;
           }
     }
 
