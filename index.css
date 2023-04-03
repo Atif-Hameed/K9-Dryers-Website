@@ -409,6 +409,10 @@ nav li select {
     cursor: pointer !important;
     color: #000 !important;
   }
+  .repair-border{
+    border: 2px solid #c1bdbd63;
+    border-radius: 10px;
+  }
 /* LARGE SIZE */
 @media screen and (max-width:1000px) {
     .hr-width{
