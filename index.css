@@ -11,7 +11,7 @@ body {
 
 .bg-image {
     background-image: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/banner_a10eccef-1235-4536-bb29-3ff10dc32a7c.jpg?v=1655271111');
-    height: 98%;
+    height: 99%;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -413,6 +413,35 @@ nav li select {
     border: 2px solid #c1bdbd63;
     border-radius: 10px;
   }
+  .repair-bg{
+    background: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/faq-bg.png');
+    width: 100% !important;
+    /* height: 170v !important; */
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: cover;
+    display: inline-block;
+  }
+  .repair-text-bg{
+    font-family: 'Abril Fatface', cursive;
+    background-image: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/customer-review-bg.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    display: inline-block;
+    padding-right: 20px;
+    background-position-x: 30px!important;
+  }
+  .check-btn{
+    position: absolute;
+    right: 9px;
+  }
+  .dog-dryer-font{
+    font-size: 1.42rem !important;
+  }
+  .bg-dog-dryer-font{
+    font-size: 1.5rem;
+  }
 /* LARGE SIZE */
 @media screen and (max-width:1000px) {
     .hr-width{
@@ -427,7 +456,7 @@ nav li select {
     }
 
     .hero-heading-2 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .col-styl-top {
@@ -446,17 +475,10 @@ nav li select {
     .mobil-img {
         top: -180px;
     }
-    /* .hr-width{
-        width: 60% !important;
-      } */
 }
 
 /* MEDIUM SIZE */
 @media screen and (max-width: 770px) {
-    /* .dog-btn-1{  
-        padding: 0.8rem 1.1rem !important;
-      } */
-      
     .hero-lower-font {
         font-size: 0.7rem !important;
     }
@@ -553,6 +575,21 @@ nav li select {
 }
     /* Small Size */
     @media screen and (max-width:576px) {
+        .logo {
+            width: 6rem !important;
+        }
+        .dog-dryer-head{
+            font-size: 2.75rem !important;
+          }
+        .bg-dog-dryer-font{
+            font-size: 1rem;
+          }
+        .bg-dog-dryer{
+            height: 17rem;
+          }
+        .dog-dryer-font{
+            font-size: 1rem !important;
+          }
         .btn-marg{
             margin: 4.7rem 0 0 0; 
           }
@@ -574,7 +611,7 @@ nav li select {
         }
 
         .hero-heading-1 {
-            font-size: 1.53rem;
+            font-size: 1.43rem;
         }
 
         .hero-btn-2 {
