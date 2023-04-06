@@ -8,7 +8,18 @@
 body {
     font-family: 'PT Sans', sans-serif;
 }
-
+.side-sticky-label{
+    position: fixed;
+    right: 0;
+    top: 33.6%;
+    background-color: #fff;
+    width: 4.4rem;
+    height: 11.89rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2)!important;
+    z-index: 50;
+}
 .bg-image {
     background-image: url('https://cdn.shopify.com/s/files/1/0279/1112/7139/files/banner_a10eccef-1235-4536-bb29-3ff10dc32a7c.jpg?v=1655271111');
     height: 99%;
@@ -434,7 +445,8 @@ nav li select {
   }
   .check-btn{
     position: absolute;
-    right: 9px;
+    top: 70%;
+    left: 67%;
   }
   .dog-dryer-font{
     font-size: 1.42rem !important;
@@ -442,8 +454,18 @@ nav li select {
   .bg-dog-dryer-font{
     font-size: 1.5rem;
   }
+  .stiky-text{
+    font-size: 1.2rem;
+  }
+  .small-image{
+    width:4rem ;
+  }
 /* LARGE SIZE */
 @media screen and (max-width:1000px) {
+    .side-sticky-label{
+        width: 2.6rem;
+        height: 11rem;
+    }
     .hr-width{
         width: 100% !important;
       }
@@ -575,6 +597,14 @@ nav li select {
 }
     /* Small Size */
     @media screen and (max-width:576px) {
+        .side-sticky-label{
+            top: 38.6%;
+            width: 2.5rem;
+            height: 11rem;
+        }
+        .stiky-text{
+            font-size: 1.2rem !important;
+        }
         .logo {
             width: 6rem !important;
         }
